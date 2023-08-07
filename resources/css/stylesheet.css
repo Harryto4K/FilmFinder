@@ -112,11 +112,16 @@ section {
     transition: all 200ms;
 }
 
+#btn-movie:active {
+    background-color: red;
+}
+
 #movie {
     display: flex;
     justify-content: center;
     width: 80%;
     padding: 0 0 10% 0;
+    font-family: 'Raleway';
 }
 
 .col-container {
@@ -129,4 +134,19 @@ section {
 #m-poster {
     width: 50%;
     height: auto;
+}
+
+@media only screen and (max-width: 550px) {
+    #Subtitle {
+        margin-left: 1rem;
+    }
+
+    #movie {
+        width: 90%; 
+    }
+
+    #m-poster {
+        width: 80%;
+        height: auto;
+    }
 }

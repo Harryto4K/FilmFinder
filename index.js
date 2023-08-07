@@ -35,7 +35,9 @@ function getSelectedGenre() {
 
 async function getMovies() {
     const selectedGenre = document.getElementById('select-genre').value;
-    const urlToFetch = tmdbBaseUrl + `/discover/movie?api_key=${tmdbKey}&with_genres=${selectedGenre}`;
+    const randomPage = Math.ceil(Math.random() * 10);
+    console.log(randomPage);
+    const urlToFetch = tmdbBaseUrl + `/discover/movie?api_key=${tmdbKey}&with_genres=${selectedGenre}&page=${randomPage}`;
     try {
         let response = await fetch(urlToFetch);
         if (response.ok) {
