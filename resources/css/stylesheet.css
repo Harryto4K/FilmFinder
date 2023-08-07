@@ -1,0 +1,132 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    background-color: darkred;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    width: 100%; 
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: darkred;
+}
+
+section {
+    margin: 2% 0;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    padding: 1rem 0;
+    margin: 0
+}
+
+#Title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+#Subtitle {
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem 0;
+}
+
+#genre {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+#Genre {
+    font-family: 'Raleway', sans-serif; 
+    margin-bottom: .25rem;
+}
+
+#select-genre {
+    margin-bottom: 3rem;
+    padding: .1rem 3.5rem;
+    border: 3px solid lightcoral;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+
+#btn-movie {
+    padding: .5rem 3rem;
+    font-weight: bold;
+    font-family: 'Chivo Mono';
+    background-color: lightcoral;
+    border: 2px inset red;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+#btn-movie::before {
+    content: "🍿"; 
+    position: relative; 
+    right: 20%;
+    transition: all 200ms;
+}
+
+#btn-movie::after {
+    content: "🍿";
+    position: relative;
+    left: 20%;
+    transition: all 200ms;
+}
+
+#btn-movie:hover {
+    padding: .5rem 5rem;
+    transition: all 200ms;
+}
+
+#btn-movie:hover::before {
+    content: "🎥";
+    position: relative;
+    right: 30%;
+    transition: all 200ms;
+}
+
+#btn-movie:hover::after {
+    content: "🎥";
+    position: relative;
+    left: 30%;
+    transition: all 200ms;
+}
+
+#movie {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding: 0 0 10% 0;
+}
+
+.col-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#m-poster {
+    width: 50%;
+    height: auto;
+}

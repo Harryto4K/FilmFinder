@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/stylesheet.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,200;0,700;1,200&family=Raleway:ital,wght@0,100;0,200;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <title>Film Finder</title>
+</head>
+<body>
+    <main>
+            <section aria-labelledby="Title" id="title">
+                <h1 id="Title">Film Finder</h1>
+                <span id="Subtitle">Choose the genre and press the button to make a random movie appear!</span>
+            </section>
+            <section aria-labelledby="Genre" id="genre">
+                <h3 id="Genre">Choose the genre:</h3>
+                <select id="select-genre">
+                    
+                </select>
+                <button id="btn-movie" type="button">Random Movie Generator</button>
+            </section>
+            <section aria-labelledby="Movie" id="movie">
+                <div class="col-container">
+                    <img src="" alt="Movie Poster" id="m-poster" hidden/> 
+                </div>
+                <div class="col-container">
+                    <h3 id="Movie"></h3>
+                    <span id="m-info"></span>
+                </div>
+            </section>
+    </main>
+</body>
+</html>
