@@ -1,3 +1,6 @@
+import {config} from "/config.js"; 
+
+const tmdbKey = config.tmdbKey; 
 const tmdbBaseUrl = 'https://api.themoviedb.org/3';
 const movieBtn = document.getElementById("btn-movie"); 
 
